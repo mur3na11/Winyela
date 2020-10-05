@@ -1,0 +1,11 @@
+#contact .map {
+  flex: 2;
+}
+
+#showcase {
+  min-height: 75vh;
+}
+
+#showcase .showcase-content {
+  min-height: 75vh;
+}
