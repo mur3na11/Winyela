@@ -1,31 +1,55 @@
-@media (max-width: 620px) {
+@media (max-width: 900px) {
   #navbar {
     flex-direction: column;
     align-items: center;
   }
+
   #navbar img {
     margin-top: 1rem;
   }
+
+  #navbar h1 {
+    padding: 1rem 0;
+  }
+
   #navbar ul li {
     padding: 0.3rem 0 1rem 0;
   }
 
   #showcase .showcase-content {
     padding: 1.25rem 2rem;
-    min-height: 75vh;
+    min-height: 30vh;
   }
+
   #showcase .showcase-content h1 {
-    padding: 1rem 0 0 0;
+    padding: 2rem 0;
     font-size: 2rem;
   }
+
+  #about {
+    padding-top: 0.3rem;
+    line-height: 1.3rem;
+  }
+
   .photos {
     flex-direction: column;
     justify-content: space-around;
   }
+
+  .photos p {
+    display: none;
+  }
+
   .image {
     width: 60%;
     max-width: 90%;
     margin: 1rem 0;
     align-self: center;
+  }
+
+  #contact .contact-form p,
+  #contact .map {
+    display: none;
+
   }
 }

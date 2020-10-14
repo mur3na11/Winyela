@@ -6,6 +6,15 @@
   padding: 0;
 }
 
+body {
+  --primary-color: #60d6ca;
+  --primary-light: #8cfff3;
+  --primary-background: #308a81;
+  --secondary-color: #ff9f73;
+  --secondary-light: #ffcab1;
+  --secondary-background: #8a4322;
+}
+
 .container {
   max-width: 1100px;
   margin: auto;
@@ -16,32 +25,41 @@
 .text-center {
   text-align: center;
 }
+
 .text-block {
   text-align: center;
 }
+
 .bg-dark {
   background: #333;
   color: #fff;
 }
+
 .bg-primary {
   background: #308a81;
   color: #fff;
 }
+
 .py-1 {
   padding: 1.5rem 0;
 }
+
 .py-2 {
   padding: 2rem 0;
 }
+
 .py-3 {
   padding: 3rem 0;
 }
+
 .p-1 {
   padding: 1.5rem;
 }
+
 .p-2 {
   padding: 2rem;
 }
+
 .p-3 {
   padding: 3rem;
 }
@@ -62,12 +80,13 @@ p {
   margin: 0.75rem 0;
 }
 
+.text-ma,
 .text-primary {
-  color: #60d6ca;
+  color: var(--primary-color);
 }
 
 .text-secondary {
-  color: #ff9f73;
+  color: var(--secondary-color);
 }
 
 .btn {
@@ -82,8 +101,8 @@ p {
 
   background: #333;
   color: #308a81;
-  color: #60d6ca;
-  color: #8cfff3;
+
+
   justify-content: space-between;
   z-index: 1;
   padding: 0 1rem;
@@ -93,10 +112,13 @@ nav img {
   width: 198px;
   padding: 0.4rem 0;
 }
+
 #navbar h1 {
-  font-family: NTR;
-  font-size: 3rem;
-  padding-left: 1.25rem;
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 4rem;
+  font-weight: 100;
+  color: var(--secondary-light);
+  padding: 2rem;
 }
 
 #navbar ul {
@@ -106,22 +128,30 @@ nav img {
 }
 
 #navbar ul li a {
-  color: #8cfff3;
+  color: var(--primary-color);
+  font-family: Cinzel Decorative;
+  font-size: 1rem;
+  font-weight: 1000;
   padding: 0.75rem;
   margin: 0 0.25rem;
 }
 
 #navbar ul li a:hover {
-  background: #8a4322;
+  background: var(--secondary-background);
   border-radius: 3px;
 }
+
 #navbar ul li a:visited {
-  color: #8cfff3;
+  color: var(--primary-color);
 }
 
 #showcase {
-  background: #333 url("../img/showcase3.jpg") no-repeat top center/cover;
-  min-height: 50vh;
+  position: relative;
+
+  background-color: #333;
+
+
+
 }
 
 #showcase .showcase-content {
@@ -131,9 +161,26 @@ nav img {
   /* justify-content: center; */
   align-items: center;
 
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #8cfff3;
-  padding: 1.25rem 12rem;
+  color: var(--primary-light);
+  padding: 0rem 12rem;
+  overflow: hidden;
+  opacity: .99;
+
+
+
+}
+
+.photos p {
+  display: none;
+}
+
+#showcase:before {
+  position: absolute;
+  content: '';
+  background: #333 url("../img/showcase4.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  opacity: 33%;
 }
 
 #showcase .showcase-content h1 {
@@ -146,11 +193,12 @@ nav img {
   margin-bottom: 1rem;
   max-width: 660px;
 }
+
 #showcase .showcase-content .btn {
   display: inline-block;
-  color: #ff9f73;
+  color: var(--secondary-color);
   font-size: 1.1rem;
-  background: #308a81;
+  background: var(--primary-background);
   padding: 0 1rem;
   border: none;
   border-radius: 5px;
@@ -159,17 +207,78 @@ nav img {
 
 #showcase .showcase-content .btn:hover {
   background: #1e6b68;
+  cursor: pointer;
 }
 
 .photos {
   display: flex;
   justify-content: space-around;
+  /* margin: 2rem 0; */
+}
+
+#myVideo {
+  position: absolute;
+
+  max-width: 100%;
+  height: auto;
+  z-index: -10;
+  opacity: 0.9;
+  margin-bottom: 5rem;
+
 }
 
 .image {
   border-radius: 50%;
   max-width: 20%;
   flex: 1;
+}
+
+.dog-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dog {
+  max-width: 250px;
+  background-color: var(--secondary-light);
+  display: flex;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.dog-text {
+  min-width: 200px;
+}
+
+.dog img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.dogs {
+  background-color: var(--secondary-background);
+}
+
+.dogs .container {
+
+  min-height: 75vh;
+
+}
+
+#lightgallery {}
+
+#lightgallery a img {}
+
+.dogs h1 {
+  font-size: 3rem;
+  color: #111;
+  align-self: center;
+}
+
+
+
+.about {
+  z-index: 1;
 }
 
 #contact {
@@ -188,11 +297,13 @@ nav img {
 #contact .contact-form label {
   display: block;
 }
+
 #contact .contact-form input,
 #contact .contact-form textarea {
   width: 100%;
   padding: 0.8rem;
 }
+
 #contact .contact-form textarea {
   margin: 2rem 0 0 0;
   min-height: 100px;
@@ -202,4 +313,4 @@ nav img {
   #showcase .showcase-content {
     padding: 1.25rem 2rem;
     min-height: 75vh;
-}
+  }
