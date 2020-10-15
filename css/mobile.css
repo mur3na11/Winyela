@@ -59,10 +59,18 @@
   .dog-card-right .visit-card h2,
   .dog-card-right .visit-card p {
     text-align: left;
-
-    #contact .contact-form p,
-    #contact .map {
-      display: none;
-
-    }
   }
+
+  .dog-card {
+
+    display: grid;
+    grid-template-rows: 1fr;
+    z-index: 1;
+  }
+
+  #contact .contact-form p,
+  #contact .map {
+    display: none;
+
+  }
+}
