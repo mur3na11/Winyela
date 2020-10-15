@@ -34,24 +34,101 @@
     <section class="dogs">
         <div class="container">
 
-            <div id="lightgallery">
-
-                <a href="img/vinc1.jpg">
-                    <img src="img/vinc1.small.jpg" />
-
-                </a>
-
-
-                </a>
-                <a href="img/aki1.jpg">
-                    <img src="img/aki1.small.jpg" />
-                </a>
+            <div id="vinc" class="dog-card dog-card-left">
+                <div class="album" id="collection1"
+                    data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                    <a href="img/vinc1.jpg">
+                        <img src="img/vinc1.small.jpg" />
+                    </a>
+                    <a href="img/vinc2.jpg">
+                        <img src="img/vinc2.small.jpg" />
+                    </a>
+                    <a href="img/vinc3.jpg">
+                        <img src="img/vinc3.small.jpg" />
+                    </a>
+                </div>
+                <div class="visit-card">
+                    <h2>V i n c</h2>
+                    <p>Budoucí žampión</p>
+                </div>
 
             </div>
+            <div></div>
+            <div></div>
+
+            <div id="aki" class="dog-card dog-card-right">
+                <div class="visit-card">
+                    <h2>A k i</h2>
+                    <p>Zasloužená stotřicetinásobná maminka</p>
+                </div>
+                <div class="album" id="collection2"
+                    data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                    <a href="img/aki1.jpg">
+                        <img src="img/aki1.small.jpg" />
+                    </a>
+                    <a href="img/aki_morty_rheia.jpg">
+                        <img src="img/aki_morty_rheia.small.jpg" />
+                    </a>
+                </div>
+
+
+            </div>
+            <div id="remi" class="dog-card dog-card-left">
+                <div class="album" id="collection3"
+                    data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                    <a href="img/remi1.jpg">
+                        <img src="img/remi1.small.jpg" />
+                    </a>
+                    <a href="img/remi2.jpg">
+                        <img src="img/remi2.small.jpg" />
+                    </a>
+
+                </div>
+                <div class="visit-card">
+                    <h2>R e m i</h2>
+                    <p>Plyšáček</p>
+                </div>
+
+            </div>
+            <div></div>
+            <div></div>
+
+            <div id="rheia" class="dog-card dog-card-right">
+                <div class="visit-card">
+                    <h2>R h e i a</h2>
+                    <p>njnnnnnn reja....</p>
+                </div>
+                <div class="album" id="collection4"
+                    data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                    <a href="img/rheia1.jpg">
+                        <img src="img/rheia1.small.jpg" />
+                    </a>
+
+                    <a href="img/aki_morty_rheia.jpg">
+                        <img src="img/aki_morty_rheia.small.jpg" />
+                    </a>
+
+                </div>
+            </div>
+            <div id="morty" class="dog-card dog-card-left">
+
+                <div class="album" id="collection5"
+                    data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                    <a href="img/morty1.jpg">
+                        <img src="img/morty1.small.jpg" />
+                    </a>
+
+                    <a href="img/aki_morty_rheia.jpg">
+                        <img src="img/aki_morty_rheia.small.jpg" />
+                    </a>
+
+                </div>
+                <div class="visit-card">
+                    <h2>M o r t y</h2>
+                    <p>Morťáček je hodnej.</p>
+                </div>
+            </div>
         </div>
-
-
-
         <!--   
             <div class="dog">
                 <div class="dog-text">
@@ -115,12 +192,20 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#lightgallery').lightGallery();
+            $('#collection1').lightGallery();
+            $('#collection2').lightGallery();
+            $('#collection3').lightGallery();
+            $('#collection4').lightGallery();
+            $('#collection5').lightGallery();
         });
+        // $(document).ready(function () {
+        //     $('#run-gallery').click(function () {
+        //         $('#lightgallery').lightGallery();
+        //     });
+        // });
     </script>
 
-    <script src="js/dogs.js">
-    </script>
+
     </script>
     <script src="js/lightgallery-all.min.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
@@ -128,6 +213,8 @@
         async defer></script> -->
 
     <!-- <script src="jquery.min.js"></script> -->
+    <!-- <script src="js/dogs.js"> -->
+    </script>
 </body>
 
 </html>

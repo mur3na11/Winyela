@@ -1,1 +1,1 @@
-(lightGallery());
+$('#lightgallery').lightGallery();
