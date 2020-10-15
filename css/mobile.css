@@ -13,7 +13,7 @@
   }
 
   #navbar ul li {
-    padding: 0.3rem 0 1rem 0;
+    padding: 0 0 2rem 0;
   }
 
   #navbar ul li a {
@@ -51,9 +51,13 @@
     align-self: center;
   }
 
+  .dogs:before {
+    background: none;
+  }
+
   .dogs .container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .dog-card-right .visit-card h2,
@@ -61,11 +65,64 @@
     text-align: left;
   }
 
+  #vinc {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+
+  }
+
+  #aki {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    flex-direction: column-reverse;
+  }
+
+  #remi {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+
+  }
+
+  #rheia {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+    flex-direction: column-reverse;
+  }
+
+
+  #morty {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+
+  }
+
   .dog-card {
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-rows: 1fr;
     z-index: 1;
+    padding: 2rem;
+  }
+
+  .album {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dog-card-left .visit-card h2,
+  .dog-card-left .visit-card p,
+  .dog-card-right .visit-card h2,
+  .dog-card-right .visit-card p {
+    text-align: center;
+  }
+
+  .album a {
+    align-self: center;
+  }
+
+  .album a img {
+    align-self: center;
   }
 
   #contact .contact-form p,
