@@ -264,7 +264,7 @@ nav img {
   width: 100%;
   height: 100%;
   opacity: 5%;
-
+  z-index: 0;
 }
 
 
@@ -311,6 +311,7 @@ nav img {
   display: flex;
   background-color: #f3f3f3;
 
+
 }
 
 .dog-card-left .visit-card h2,
@@ -337,19 +338,23 @@ nav img {
   min-width: 50%;
 }
 
+.album {
+  z-index: 3;
+}
+
 .album a img {
   display: none;
   border-radius: 15px;
-
+  /* z-index: 3; */
 }
+
+/* .album a {
+  z-index: 3;
+} */
 
 .album a:first-child img {
   display: block;
 }
-
-#lightgallery {}
-
-#lightgallery a img {}
 
 .dogs h1 {
   font-size: 3rem;
