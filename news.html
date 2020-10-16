@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/3dd138f3a4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,300;0,500;0,700;0,800;1,500;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css" />
     <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
     <title>Winyela | Border Collies | Kennel</title>
 </head>
 
@@ -29,7 +31,73 @@
             <li><a href="index.html#contact">Contact</a></li>
         </ul>
     </nav>
+    <section id="news">
+        <div class="container">
+            <div class="news">
+                <div class="news-foto" id="news1"
+                    data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                    <a href="img/news1.jpg">
+                        <img src="img/news1.small.jpg" />
+                    </a>
 
+                </div>
+                <div class="news-text">
+                    <h2>Best Of Breed!</h2>
+                    <p>So we won again. </p>
+                    <p> And even inspite of all those successes, I am stil big ťunťa! </p>
+                    <p>Jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunťa,
+                        jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunťa,
+                    </p>
+                    <p>
+                        <h6 class="btn">Read more</h6>
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="news news-even">
+                <div class="news-foto" id="news2"
+                    data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                    <a href="img/news1.jpg">
+                        <img src="img/news1.small.jpg" />
+                    </a>
+
+                </div>
+                <div class="news-text">
+                    <h2>Best Of Breed!</h2>
+                    <p>So we won again. </p>
+                    <p> And even inspite of all those successes, I am stil big ťunťa! </p>
+                    <p>Jsem ťunťa, jsem ťunťa,
+                    </p>
+                    <p>  <h6 class="btn">Read more</h6>
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="news">
+                <div class="news-foto" id="news3"
+                    data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1-757.jpg 757">
+                    <a href="img/news1.jpg">
+                        <img src="img/news1.small.jpg" />
+                    </a>
+
+                </div>
+                <div class="news-text">
+                    <h2>Best Of Breed!</h2>
+                    <p>So we won again. </p>
+                    <p> And even inspite of all those successes, I am stil big ťunťa! </p>
+                    <p>Jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunťa, jsem ťunť
+                    </p>
+                    <p>
+                    <h6 class="btn">Read more</h6>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
     <footer id="main-footer" class="bg-dark text-center py-1">
         <div class="container">
             <p>
@@ -37,11 +105,25 @@
             </p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!-- <script src="js/main.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#news1').lightGallery();
+            $('#news2').lightGallery();
+            $('#news3').lightGallery();
+            $('#news4').lightGallery();
+            $('#news5').lightGallery();
+        });
+    </script>
+        <script src="js/lightgallery-all.min.js"></script>
+        <script src="js/jquery.mousewheel.min.js"></script>
+        <!-- <script src="https://maps.googleapis.com/maps/api/
+   <script src="js/main.js"></script>
+     
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU3HuqApbr3aYQbKwUBWqqpPP8f26gzNo&callback=initMap"
-        async defer></script>
+        async defer></script> -->
 </body>
 
 </html>

@@ -9,3 +9,10 @@
 #showcase .showcase-content {
   min-height: 50vh;
 }
+
+#showcase .showcase-content h1 {
+  padding: 5rem 0;
+  font-size: 4rem;
+  max-width: 660px;
+  line-height: 8rem;
+}

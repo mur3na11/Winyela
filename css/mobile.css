@@ -125,9 +125,40 @@
     align-self: center;
   }
 
+  #about .container {
+    padding: 0 1rem;
+  }
+
+  #about .container p {
+    line-height: 1.3rem;
+  }
+
   #contact .contact-form p,
   #contact .map {
     display: none;
+
+  }
+
+  #news .container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .news:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .news-foto {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    margin-top: 1rem;
 
   }
 }
