@@ -58,6 +58,8 @@
   .dogs .container {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 0;
+    margin: auto;
   }
 
   .dog-card-right .visit-card h2,
