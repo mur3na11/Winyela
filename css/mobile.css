@@ -140,10 +140,11 @@
   }
 
   #news .container {
-    padding: 2rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: auto;
 
   }
 
@@ -157,8 +158,19 @@
   .news-foto {
     display: flex;
     justify-content: center;
-    align-items: space-between;
+    align-items: center;
     margin-top: 1rem;
 
   }
+
+  .news {
+    justify-content: center;
+    width: 100%;
+    padding: 0 0;
+    min-width: 320px;
+    margin: auto;
+  }
+
+
+
 }

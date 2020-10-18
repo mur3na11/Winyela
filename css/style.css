@@ -19,6 +19,7 @@
   font-family: 'K2D', cursive;
 }
 
+
 .container {
   max-width: 90vw;
   margin: auto;
@@ -441,7 +442,6 @@ nav img {
   flex-direction: column;
   box-shadow: 0.2rem 0.2rem 8px 2px rgba(0, 0, 0, 0.13);
   padding-right: 10rem;
-
 }
 
 .news:nth-child(odd) {
