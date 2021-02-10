@@ -291,8 +291,8 @@ margin: 0;
 
 .image {
 
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 360px;
+  max-height: 360px;
   flex: 1;
 }
 #contact {
